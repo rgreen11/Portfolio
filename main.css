@@ -1,14 +1,25 @@
+/*
+dark brown #655c56
+94d3ac
+ccedd2
+effcef
+*/
 body {
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
+
+h1 {
+  color: #94d3ac; }
 
 .page_1 {
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-areas: "name smallBio";
   height: 100vh;
-  width: 100vw; }
+  width: 100vw;
+  background: linear-gradient(to right, #7ed56f, #28b485), url("https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80") no-repeat center center fixed;
+  background-blend-mode: screen; }
   .page_1 .name {
     grid-area: name;
     display: flex;
@@ -26,7 +37,8 @@ body {
     width: 100%;
     height: 100%; }
     .page_1 .smallBio .info {
-      background-color: grey;
+      background-color: rgba(238, 238, 238, 0.671);
+      opacity: 90%;
       width: 589px;
       height: 417px;
       text-align: center;
@@ -38,6 +50,9 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-evenly; }
+    .page_1 .btn_space .btn {
+      font-size: 15px;
+      border-radius: 10%; }
 
 @media (max-width: 900px) {
   .page_1 {
@@ -50,11 +65,13 @@ body {
 
 .page_2 {
   height: 100vh;
-  width: 100vw; }
+  width: 100vw;
+  background-color: #effcef; }
   .page_2 .title {
     text-align: center; }
   .page_2 .project_page {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    margin-top: 0; }
   .page_2 .projects {
     height: 100%;
     display: flex;
@@ -79,7 +96,6 @@ body {
   height: 100vh;
   width: 100vw; }
   .page_3 .about {
-    background-color: black;
     height: 100%;
     width: 70%; }
 
@@ -114,3 +130,8 @@ body {
       background-color: grey;
       height: 90%;
       width: 90%; }
+
+@media (max-width: 900px) {
+  .content {
+    display: flex;
+    flex-direction: column; } }
