@@ -1,5 +1,5 @@
 .page_2 {
-  height: 100vh;
+  // height: 100vh;
   width: 100vw;
   // background: url('https://images.unsplash.com/photo-1573261643696-fce074f4977f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80') no-repeat;
   background-color: $base-color;
@@ -8,16 +8,20 @@
     text-align: center;
   }
 
-  .project_page {}
+  .project_page {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: 0;
+  }
 
   .projects {
-    // height: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 
     .project {
       width: 400px;
+      margin-top: 40px;
     }
   }
 
@@ -29,8 +33,24 @@
       align-items: center;
 
       .project {
-        margin-bottom: 20px;
+        margin-top: 40px;
+        width: 300px;
       }
+
+      ._projects {
+        margin-top: 0px;
+      }
+
     }
+  }
+}
+
+span {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+
+  p {
+    cursor: pointer;
   }
 }
